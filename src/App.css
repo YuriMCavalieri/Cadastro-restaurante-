@@ -1,0 +1,8 @@
+/* style.css ou App.css */
+
+body {
+    background: linear-gradient(to right, black, grey);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
