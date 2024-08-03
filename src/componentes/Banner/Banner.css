@@ -1,0 +1,7 @@
+.banner {
+    background: linear-gradient(to right, black, grey);
+    text-align: center;
+}
+.banner img {
+    max-width: 100%;
+}
