@@ -3,7 +3,7 @@ import CampoTexto from '../CampoTexto/CampoTexto';
 import Lista from '../Lista/Lista';
 import Botao from '../Botao/Botao';
 import { useState } from 'react';
-const Formulario = () => {
+const Formulario = (props) => {
 
 
     const tipos = [
@@ -19,9 +19,14 @@ const Formulario = () => {
     const [imagem, setImagem] = useState('')
     const [tipo, setTipo] = useState('')
 
-    const aoSalvar= (evento) =>{
-        evento.preventDefault() 
-        console.log('Form foi submetido', nome,preco,imagem, tipo)
+    const aoSalvar = (evento) => {
+        evento.preventDefault()
+        props.aoColaboradorCadastrado ({
+            nome,
+            preco,
+            imagem,
+            tipo
+        })
     }
     return (
         <section className="formulario">
